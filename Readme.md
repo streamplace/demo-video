@@ -2,7 +2,11 @@
 
 This is just a WebGL canvas on the internet. All it is is one of Mozilla's [webgl-examples](https://github.com/mdn/webgl-examples) copied out here and tweaked slightly, so it's MPL-licensed.
 
+On internet here: [https://streamplace.github.io/demo-video](https://streamplace.github.io/demo-video)
+
 ## License
+
+```
 
 Mozilla Public License, version 2.0
 
@@ -366,3 +370,5 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
       This Source Code Form is "Incompatible
       With Secondary Licenses", as defined by
       the Mozilla Public License, v. 2.0.
+
+```
