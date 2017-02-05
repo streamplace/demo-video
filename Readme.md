@@ -1,6 +1,6 @@
 # demo-video
 
-This is just a WebGL canvas on the internet. All it is is one of their webgl-examples copied out here and tweaked slightly, so it's MPL-licensed.
+This is just a WebGL canvas on the internet. All it is is one of Mozilla's [webgl-examples](https://github.com/mdn/webgl-examples) copied out here and tweaked slightly, so it's MPL-licensed.
 
 ## License
 
