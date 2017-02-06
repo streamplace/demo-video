@@ -63,6 +63,13 @@ function start() {
     // Start listening for the ended event, so we can stop the
     // animation when the video is finished playing.
 
+    // Auto-reset the video before we get to the end
+    videoElement.addEventListener("timeupdate", function () {
+      if (videoElement.currentTime + 2 > videoElement.duration) {
+        videoElement.currentTime = 0.0;
+      }
+    });
+
     videoElement.addEventListener("ended", videoDone, true);
   }
 }
@@ -301,7 +308,13 @@ function updateTexture() {
 function startVideo() {
   videoElement.play();
   videoElement.muted = true;
+  let runs = 0;
+  setInterval(function() {
+    console.log(`${runs} FPS`);
+    runs = 0;
+  }, 1000);
   const render = function() {
+    runs += 1;
     window.requestAnimationFrame(render);
     drawScene();
   };
