@@ -314,11 +314,11 @@ function startVideo() {
     runs = 0;
   }, 1000);
   const render = function() {
+    setTimeout(render, 1000/30);
     runs += 1;
-    window.requestAnimationFrame(render);
     drawScene();
   };
-  window.requestAnimationFrame(render);
+  render();
 }
 
 //
