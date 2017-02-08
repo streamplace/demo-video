@@ -317,6 +317,7 @@ function startVideo() {
     setTimeout(render, 1000/30);
     runs += 1;
     drawScene();
+    window.newFrame = true;
   };
   render();
 }
