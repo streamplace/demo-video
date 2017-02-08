@@ -310,9 +310,9 @@ function startVideo() {
   videoElement.muted = true;
   let runs = 0;
   setInterval(function() {
-    console.log(`${runs} FPS`);
+    console.log(`${Math.round(runs/5)} FPS`);
     runs = 0;
-  }, 1000);
+  }, 5000);
   const render = function() {
     setTimeout(render, 1000/30);
     runs += 1;
